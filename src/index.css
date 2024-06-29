@@ -1,0 +1,13 @@
+@import url("fonts/Nohemi/Web-TT/Nohemi-Black.css");
+@import url("fonts/Nohemi/Web-TT/Nohemi-Bold.css");
+@import url("fonts/Nohemi/Web-TT/Nohemi-ExtraBold.css");
+@import url("fonts/Nohemi/Web-TT/Nohemi-ExtraLight.css");
+@import url("fonts/Nohemi/Web-TT/Nohemi-Light.css");
+@import url("fonts/Nohemi/Web-TT/Nohemi-Medium.css");
+@import url("fonts/Nohemi/Web-TT/Nohemi-Regular.css");
+@import url("fonts/Nohemi/Web-TT/Nohemi-SemiBold.css");
+@import url("fonts/Nohemi/Web-TT/Nohemi-Thin.css");
+
+body {
+  font-family: "Nohemi", sans-serif !important;
+}
