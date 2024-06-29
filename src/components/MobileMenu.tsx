@@ -43,7 +43,7 @@ const MobileMenu = ({ links }: Probs) => {
         <DrawerContent>
           <DrawerCloseButton size="lg" />
           <DrawerBody>
-            <VStack padding={10} gap={5}>
+            <VStack padding={10} gap={6}>
               {links.map((link) => (
                 <Button
                   alignContent={"center"}
