@@ -7,6 +7,7 @@ const ColorModeSwitch = () => {
   return (
     <HStack height={"100%"} alignContent={"center"}>
       <Button
+        colorScheme={"purple"}
         isActive={colorMode === "dark"}
         variant="link"
         onClick={toggleColorMode}
@@ -14,7 +15,7 @@ const ColorModeSwitch = () => {
           border: "none",
         }}
       >
-        {colorMode === "dark" ? <LuSun size={20} /> : <LuMoonStar size={20} />}
+        {colorMode === "dark" ? <LuSun size={32} /> : <LuMoonStar size={32} />}
       </Button>
     </HStack>
   );

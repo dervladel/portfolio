@@ -27,7 +27,7 @@ const MobileMenu = ({ links }: Probs) => {
         padding={0}
         height="100%"
       >
-        <Hamburger toggled={isSidebarOpen} size={20} />
+        <Hamburger toggled={isSidebarOpen} size={32} />
       </Button>
       <Drawer
         isOpen={isOpen}

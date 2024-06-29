@@ -12,7 +12,7 @@ const Nav = () => {
       }}
       gridTemplateColumns={{ base: "1fr 1fr 1fr", lg: "auto 1fr auto" }}
       gap={4}
-      marginTop={4}
+      marginTop={0}
       padding={4}
     >
       <GridItem area="menu">
