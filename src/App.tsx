@@ -1,4 +1,4 @@
-import { Grid, Hide, Show } from "@chakra-ui/react";
+import { Box, Grid, Hide, Show } from "@chakra-ui/react";
 import "./App.css";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
@@ -8,8 +8,10 @@ import Wave from "./components/Wave";
 
 function App() {
   return (
-    <Grid marginTop={2}>
-      <Nav />
+    <Grid>
+      <Box className="nav" zIndex={2} boxShadow={"md"}>
+        <Nav />
+      </Box>
       <Hide above="lg">
         <HeaderMobile />
       </Hide>

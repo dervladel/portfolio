@@ -5,6 +5,7 @@ import {
   DrawerCloseButton,
   DrawerContent,
   DrawerOverlay,
+  Link,
   VStack,
   useDisclosure,
 } from "@chakra-ui/react";
@@ -45,7 +46,8 @@ const MobileMenu = ({ links }: Probs) => {
           <DrawerBody>
             <VStack padding={10} gap={6}>
               {links.map((link) => (
-                <Button
+                <Link
+                  href={"/#" + link.toLowerCase()}
                   alignContent={"center"}
                   key={link + "1"}
                   fontSize={"32px"}
@@ -57,7 +59,7 @@ const MobileMenu = ({ links }: Probs) => {
                   }}
                 >
                   {link}
-                </Button>
+                </Link>
               ))}
             </VStack>
           </DrawerBody>

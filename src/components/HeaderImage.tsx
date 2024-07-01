@@ -5,7 +5,7 @@ interface Probs {
 }
 const HeaderImage = ({ isMobile }: Probs) => {
   return (
-    <Image boxSize={isMobile ? "200px" : "350px"} src={memoji} alt="Memoji" />
+    <Image boxSize={isMobile ? "250px" : "350px"} src={memoji} alt="Memoji" />
   );
 };
 

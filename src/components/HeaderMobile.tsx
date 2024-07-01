@@ -5,7 +5,7 @@ import HeaderText from "./HeaderText";
 const HeaderMobile = () => {
   return (
     <>
-      <VStack padding={4}>
+      <VStack padding={4} marginY={"20px"}>
         <HeaderImage isMobile={true} />
         <HeaderText isMobile={true} />
       </VStack>
