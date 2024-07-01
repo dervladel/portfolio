@@ -50,7 +50,6 @@ const CardDesktop = ({ title, usedTech, desc, image, github }: Project) => {
             </HStack>
           </Box>
           <ButtonGroup>
-            <Button colorScheme="purple">Jetzt ansehen!</Button>
             <Button
               variant={"outline"}
               colorScheme="purple"

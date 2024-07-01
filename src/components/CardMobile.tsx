@@ -42,9 +42,6 @@ const CardMobile = ({ title, usedTech, desc, image, github }: Project) => {
             </HStack>
           </VStack>
           <VStack w={"80%"}>
-            <Button colorScheme="purple" w={"100%"}>
-              Jetzt ansehen!
-            </Button>
             <Button
               variant={"outline"}
               colorScheme="purple"
