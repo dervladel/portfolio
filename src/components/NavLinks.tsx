@@ -1,4 +1,4 @@
-import { HStack, Hide, Link, Show } from "@chakra-ui/react";
+import { Button, HStack, Hide, Show } from "@chakra-ui/react";
 import MobileMenu from "./MobileMenu";
 
 const NavLinks = () => {
@@ -11,14 +11,22 @@ const NavLinks = () => {
       <Show above="lg">
         <HStack justifyContent={"center"} height="100%" gap={5}>
           {links.map((link) => (
-            <Link
-              href={"/#" + link.toLowerCase()}
+            <Button
+              onClick={() => {
+                window.open(
+                  link.toLowerCase() === "home"
+                    ? "/#"
+                    : "/#" + link.toLowerCase(),
+                  "_self"
+                );
+              }}
+              colorScheme="purple"
               key={link}
               variant="link"
               fontSize={"18px"}
             >
               {link}
-            </Link>
+            </Button>
           ))}
         </HStack>
       </Show>

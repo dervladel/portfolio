@@ -19,10 +19,23 @@ const HeaderText = ({ isMobile }: Probs) => {
         </Text>
         {isMobile ? (
           <HStack>
-            <Button colorScheme="purple" color={"white"} width="50%">
+            <Button
+              colorScheme="purple"
+              color={"white"}
+              width="50%"
+              onClick={() => {
+                window.open("/#about", "_self");
+              }}
+            >
               Über Mich
             </Button>
-            <Button colorScheme="purple" variant={"outline"}>
+            <Button
+              colorScheme="purple"
+              variant={"outline"}
+              onClick={() => {
+                window.open("/#skills", "_self");
+              }}
+            >
               Meine Skills
             </Button>
           </HStack>
@@ -33,6 +46,9 @@ const HeaderText = ({ isMobile }: Probs) => {
               color={"white"}
               width="50%"
               boxShadow="0 4px 14px 0 rgba(128, 90, 213, 0.39)"
+              onClick={() => {
+                window.open("/#about", "_self");
+              }}
             >
               Über Mich
             </Button>
@@ -40,6 +56,9 @@ const HeaderText = ({ isMobile }: Probs) => {
               colorScheme="purple"
               variant={"outline"}
               boxShadow="0 2px 10px 0 rgba(128, 90, 213, 0.2)"
+              onClick={() => {
+                window.open("/#skills", "_self");
+              }}
             >
               Meine Skills
             </Button>

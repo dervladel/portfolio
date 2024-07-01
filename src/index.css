@@ -8,9 +8,6 @@
 @import url("fonts/Nohemi/Web-TT/Nohemi-SemiBold.css");
 @import url("fonts/Nohemi/Web-TT/Nohemi-Thin.css");
 
-html {
-  scroll-behavior: smooth;
-}
 body {
   font-family: "Nohemi", sans-serif !important;
 }
@@ -59,4 +56,10 @@ body {
 
 .splide {
   padding: 50px 0;
+}
+
+@media (min-width: 992px) {
+  html {
+    scroll-behavior: smooth;
+  }
 }

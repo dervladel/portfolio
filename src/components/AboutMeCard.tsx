@@ -14,7 +14,7 @@ const AboutMeCard = () => {
       margin="0 auto"
       bg="#282c34"
       color="#abb2bf"
-      fontFamily="'Courier New', Courier, monospace"
+      fontFamily="'Arial', monospace"
     >
       <Box className="json-header" mb={4} color="#282831" borderRadius="md">
         <HStack>
