@@ -6,6 +6,7 @@ import {
   DrawerContent,
   DrawerOverlay,
   VStack,
+  useColorModeValue,
   useDisclosure,
 } from "@chakra-ui/react";
 import Hamburger from "hamburger-react";
@@ -15,6 +16,7 @@ interface Probs {
   links: string[];
 }
 const MobileMenu = ({ links }: Probs) => {
+  const color = useColorModeValue("purple.500", "purple.200");
   const [isSidebarOpen, setSideBarOpen] = useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef<HTMLButtonElement>(null);
@@ -41,12 +43,15 @@ const MobileMenu = ({ links }: Probs) => {
       >
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerCloseButton size="lg" />
-          <DrawerBody>
+          <DrawerCloseButton size="lg" color={color} />
+          <DrawerBody
+            justifyContent={"center"}
+            alignItems={"center"}
+            display={"flex"}
+          >
             <VStack padding={10} gap={6}>
               {links.map((link) => (
                 <Button
-                  alignContent={"center"}
                   key={link + "1"}
                   fontSize={"32px"}
                   variant="link"
