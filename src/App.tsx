@@ -7,6 +7,7 @@ import AboutMe from "./components/AboutMe";
 import Wave from "./components/Wave";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
       <AboutMe />
       <Skills />
       <Work />
+      <Wave direction="BottomToTop" />
+      <Contact />
     </Grid>
   );
 }

@@ -17,7 +17,11 @@ const Nav = () => {
       background={bg}
       width="100%"
     >
-      <GridItem area="menu" display="flex" justifyContent="flex-start">
+      <GridItem
+        area="menu"
+        display="flex"
+        justifyContent={{ base: "flex-start", lg: "center" }}
+      >
         <NavLinks />
       </GridItem>
       <GridItem area="logo" display="flex" justifyContent="center">
