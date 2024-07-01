@@ -62,9 +62,9 @@ const Work = () => {
           options={{
             rewind: true,
             width: "100%",
-            gap: "2rem",
+            type: "fade",
             padding: { top: "50px" },
-            arrows: false, // Disable default arrows
+            arrows: false,
           }}
         >
           {projects.map((project: Project) => (
