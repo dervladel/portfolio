@@ -6,6 +6,7 @@ import HeaderMobile from "./components/HeaderMobile";
 import AboutMe from "./components/AboutMe";
 import Wave from "./components/Wave";
 import Skills from "./components/Skills";
+import Work from "./components/Work";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Wave direction="topToBottom" />
       <AboutMe />
       <Skills />
+      <Work />
     </Grid>
   );
 }

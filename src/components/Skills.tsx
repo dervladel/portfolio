@@ -13,7 +13,7 @@ import {
   FaJava,
   FaReact,
 } from "react-icons/fa";
-import { SiChakraui, SiJquery, SiTypescript } from "react-icons/si";
+import { SiChakraui, SiJquery, SiTypescript, SiAxios } from "react-icons/si";
 import SkillsMobileChart from "./SkillsMobileChart";
 import SkillsDesktop from "./SkillsDesktop";
 
@@ -33,6 +33,7 @@ const skills = [
   { name: "Java", icon: FaJava },
   { name: "ChakraUi", icon: SiChakraui },
   { name: "jQuery", icon: SiJquery },
+  { name: "Axios", icon: SiAxios },
 ];
 
 const Skills = () => {
@@ -53,7 +54,7 @@ const Skills = () => {
         Meine Skills
       </Text>
 
-      <Hide above="sm">
+      <Hide above="md">
         <SkillsMobileChart
           skills={skills}
           skillBg={skillBg}
@@ -61,7 +62,7 @@ const Skills = () => {
           color={color}
         />
       </Hide>
-      <Show above="sm">
+      <Show above="md">
         <SkillsDesktop
           skills={skills}
           skillBg={skillBg}
