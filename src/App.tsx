@@ -5,6 +5,7 @@ import Nav from "./components/Nav";
 import HeaderMobile from "./components/HeaderMobile";
 import AboutMe from "./components/AboutMe";
 import Wave from "./components/Wave";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       </Show>
       <Wave direction="topToBottom" />
       <AboutMe />
+      <Skills />
     </Grid>
   );
 }

@@ -6,7 +6,7 @@ const AboutMe = () => {
   return (
     <>
       <Box background={bg} id="about">
-        <Container marginY={"50px"} maxW={"container.lg"}>
+        <Container marginY={"50px"} maxW={"container.lg"} paddingY={"50px"}>
           <AboutMeCard />
         </Container>
       </Box>
