@@ -27,11 +27,20 @@ const HeaderText = ({ isMobile }: Probs) => {
             </Button>
           </HStack>
         ) : (
-          <HStack>
-            <Button colorScheme="purple" color={"white"} width="50%">
+          <HStack marginTop={marginBottom}>
+            <Button
+              colorScheme="purple"
+              color={"white"}
+              width="50%"
+              boxShadow="0 4px 14px 0 rgba(128, 90, 213, 0.39)"
+            >
               Über Mich
             </Button>
-            <Button colorScheme="purple" variant={"outline"}>
+            <Button
+              colorScheme="purple"
+              variant={"outline"}
+              boxShadow="0 2px 10px 0 rgba(128, 90, 213, 0.2)"
+            >
               Meine Skills
             </Button>
           </HStack>

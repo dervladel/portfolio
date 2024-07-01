@@ -4,10 +4,11 @@ import Header from "./components/Header";
 import Nav from "./components/Nav";
 import HeaderMobile from "./components/HeaderMobile";
 import AboutMe from "./components/AboutMe";
+import Wave from "./components/Wave";
 
 function App() {
   return (
-    <Grid gap={4} marginTop={2} padding={4}>
+    <Grid marginTop={2}>
       <Nav />
       <Hide above="lg">
         <HeaderMobile />
@@ -15,7 +16,8 @@ function App() {
       <Show above="lg">
         <Header />
       </Show>
-      <AboutMe></AboutMe>
+      <Wave direction="topToBottom" />
+      <AboutMe />
     </Grid>
   );
 }
