@@ -57,7 +57,16 @@ body {
 .splide {
   padding: 50px 0;
 }
-
+.aboutMeCardDesktop {
+  padding: 0 !important;
+}
+.aboutMeCardDesktop .json-card {
+  height: 100%;
+  border-radius: unset;
+}
+.aboutMeCardDesktop .json-card .json-content {
+  height: 100%;
+}
 @media (min-width: 992px) {
   html {
     scroll-behavior: smooth;
