@@ -13,10 +13,21 @@ import {
 import { Project } from "./Work";
 import TechStackIcon from "./TechStackIcon";
 import { FaGithub } from "react-icons/fa";
-const CardMobile = ({ title, usedTech, desc, image, github }: Project) => {
+import { FaArrowRightLong } from "react-icons/fa6";
+const CardMobile = ({
+  title,
+  usedTech,
+  desc,
+  image,
+  github,
+  viewLink,
+}: Project) => {
   const cardBg = useColorModeValue("#FFFFFF", "#1A202C");
   const handleGitClick = () => {
     window.open(github, "_blank"); // Open githubLink in a new tab
+  };
+  const handleViewClick = () => {
+    window.open(viewLink, "_blank");
   };
   return (
     <Box>
@@ -42,14 +53,34 @@ const CardMobile = ({ title, usedTech, desc, image, github }: Project) => {
             </HStack>
           </VStack>
           <VStack w={"80%"}>
-            <Button
-              variant={"outline"}
-              colorScheme="purple"
-              onClick={handleGitClick}
-              w={"100%"}
-            >
-              <Icon as={FaGithub} boxSize={"28px"} />
-            </Button>
+            {viewLink != "" && (
+              <Button
+                colorScheme="purple"
+                onClick={handleViewClick}
+                className="workViewBtn"
+                w={"100%"}
+              >
+                <HStack>
+                  <Text>Jetzt Ansehen</Text>
+                  <Box
+                    transition="transform 0.2s ease-in-out"
+                    _groupHover={{ transform: "translateX(5px)" }}
+                  >
+                    <Icon as={FaArrowRightLong} boxSize={"20px"} />
+                  </Box>
+                </HStack>
+              </Button>
+            )}
+            {github != "" && (
+              <Button
+                variant={"outline"}
+                colorScheme="purple"
+                onClick={handleGitClick}
+                w={"100%"}
+              >
+                <Icon as={FaGithub} boxSize={"28px"} />
+              </Button>
+            )}
           </VStack>
         </VStack>
       </Card>

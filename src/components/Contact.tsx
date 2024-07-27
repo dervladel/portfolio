@@ -8,7 +8,7 @@ import {
   Show,
   useColorModeValue,
 } from "@chakra-ui/react";
-import me from "../assets/about.png";
+import me from "../assets/about.webp";
 import ContactIcon from "./ContactIcon";
 
 const contactIcons = [
@@ -47,6 +47,7 @@ const Contact = () => {
         <HStack>
           {contactIcons.map((contact) => (
             <ContactIcon
+              key={contact.id}
               id={contact.id}
               slug={contact.slug}
               label={contact.label}

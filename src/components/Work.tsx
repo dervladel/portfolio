@@ -23,6 +23,7 @@ export interface Project {
   usedTech: string[];
   desc: string;
   image: string;
+  viewLink: string;
   github: string;
 }
 
@@ -76,6 +77,7 @@ const Work = () => {
                   desc={project.desc}
                   image={project.image}
                   usedTech={project.usedTech}
+                  viewLink={project.viewLink}
                   github={project.github}
                 />
               </Show>
@@ -86,6 +88,7 @@ const Work = () => {
                   desc={project.desc}
                   image={project.image}
                   usedTech={project.usedTech}
+                  viewLink={project.viewLink}
                   github={project.github}
                 />
               </Hide>

@@ -8,10 +8,11 @@ const AboutMeCardDesktop = () => {
       direction={{ base: "column", sm: "row" }}
       overflow="hidden"
       variant="outline"
+      minH={"450px"}
     >
       <Image
         objectFit="cover"
-        maxW={{ base: "100%", sm: "200px" }}
+        maxW={{ base: "100%", sm: "300px" }}
         src={meImg}
         alt="Caffe Latte"
       />

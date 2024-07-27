@@ -14,10 +14,21 @@ import {
 import { Project } from "./Work";
 import TechStackIcon from "./TechStackIcon";
 import { FaGithub } from "react-icons/fa";
+import { FaArrowRightLong } from "react-icons/fa6";
 
-const CardDesktop = ({ title, usedTech, desc, image, github }: Project) => {
+const CardDesktop = ({
+  title,
+  usedTech,
+  desc,
+  image,
+  viewLink,
+  github,
+}: Project) => {
   const handleGitClick = () => {
-    window.open(github, "_blank"); // Open githubLink in a new tab
+    window.open(github, "_blank");
+  };
+  const handleViewClick = () => {
+    window.open(viewLink, "_blank");
   };
   return (
     <Card
@@ -50,13 +61,32 @@ const CardDesktop = ({ title, usedTech, desc, image, github }: Project) => {
             </HStack>
           </Box>
           <ButtonGroup>
-            <Button
-              variant={"outline"}
-              colorScheme="purple"
-              onClick={handleGitClick}
-            >
-              <Icon as={FaGithub} />
-            </Button>
+            {viewLink != "" && (
+              <Button
+                colorScheme="purple"
+                onClick={handleViewClick}
+                className="workViewBtn"
+              >
+                <HStack>
+                  <Text>Jetzt Ansehen</Text>
+                  <Box
+                    transition="transform 0.2s ease-in-out"
+                    _groupHover={{ transform: "translateX(5px)" }}
+                  >
+                    <Icon as={FaArrowRightLong} boxSize={"20px"} />
+                  </Box>
+                </HStack>
+              </Button>
+            )}
+            {github != "" && (
+              <Button
+                variant={"outline"}
+                colorScheme="purple"
+                onClick={handleGitClick}
+              >
+                <Icon as={FaGithub} />
+              </Button>
+            )}
           </ButtonGroup>
         </CardBody>
       </Stack>

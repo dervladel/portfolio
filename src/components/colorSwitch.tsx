@@ -5,7 +5,12 @@ const ColorModeSwitch = () => {
   const { toggleColorMode, colorMode } = useColorMode();
 
   return (
-    <HStack height={"100%"} alignContent={"center"}>
+    <HStack
+      height={"100%"}
+      alignContent={"center"}
+      minW={"64px"}
+      justifyContent={"center"}
+    >
       <Button
         colorScheme={"purple"}
         isActive={colorMode === "dark"}

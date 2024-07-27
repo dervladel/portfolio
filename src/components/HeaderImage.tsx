@@ -1,5 +1,5 @@
 import { Image } from "@chakra-ui/react";
-import memoji from "../assets/memoji.png";
+import memoji from "../assets/memoji.webp";
 interface Probs {
   isMobile: boolean;
 }

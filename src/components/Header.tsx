@@ -4,7 +4,7 @@ import HeaderDesktop from "./HeaderDesktop";
 
 const Header = () => {
   return (
-    <Container maxW={"container.lg"} padding={4}>
+    <Container maxW={"container.lg"} padding={4} id="home">
       <Hide above="md">
         <HeaderMobile />
       </Hide>
